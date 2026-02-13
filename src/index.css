@@ -1,0 +1,175 @@
+@import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+
+.zalando-sans {
+    font-family: "Zalando Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.playfair-display {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.satoshi {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+.google-sans-flex {
+    font-family: "Google Sans Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.anton {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+
+.hero-section {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    /* adjust navbar height */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 🔥 50% opacity overlay */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.5);
+    /* 50% opacity */
+    z-index: 1;
+}
+
+/* Content stays fully visible */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+
+
+.hero-image {
+    min-height: calc(100vh - 80px);
+    /* 🔥 THIS is the key */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-section {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    /* adjust navbar height */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes scrollGallery {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.auto-scroll {
+    animation: scrollGallery 40s linear infinite;
+}
+
+.auto-scroll:hover {
+    animation-play-state: paused;
+}
+
+.marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 40s linear infinite;
+}
+
+.marquee-track {
+    display: flex;
+    gap: 2rem;
+    padding-right: 2rem;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.marquee:hover {
+    animation-play-state: paused;
+}
+
+@media (max-width: 640px) {
+    .marquee {
+        animation-duration: 55s;
+    }
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
