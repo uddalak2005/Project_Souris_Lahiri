@@ -4,6 +4,7 @@ import AboutCard from "../components/AboutCard"
 import MentalHeath from "../assets/MentalHealth.jpeg"
 import Research from "../assets/research.jpeg"
 import Voice from "../assets/voice.jpeg"
+import { motion } from 'framer-motion'
 
 
 const AboutSection = () => {
@@ -19,14 +20,16 @@ const AboutSection = () => {
                 </p>
             </div> */}
 
-            <div className='m-auto w-4/5 flex justify-center items-center sm:gap-3 my-5 sm:m-5'>
-                <div>
-                    <img src={chessKing} alt="" className='h-10 w-20 md:h-20 md:w-20 invert m-0 p-0' />
+            <motion.div>
+                <div className='m-auto w-4/5 flex justify-center items-center sm:gap-3 my-5 sm:m-5'>
+                    <div>
+                        <img src={chessKing} alt="" className='h-10 w-20 md:h-20 md:w-20 invert m-0 p-0' />
+                    </div>
+                    <p className='text-center p-0 pt-10 text-3xl sm:text-5xl md:text-7xl text-gray-500'>
+                        Bridging <span className='text-[#fff8f0]'>Evidence</span> and <span className='text-[#fff8f0]'>Empathy.</span>
+                    </p>
                 </div>
-                <p className='text-center p-0 pt-10 text-3xl sm:text-5xl md:text-7xl text-gray-500'>
-                    Bridging <span className='text-[#fff8f0]'>Evidence</span> and <span className='text-[#fff8f0]'>Empathy.</span>
-                </p>
-            </div>
+            </motion.div>
 
 
 

@@ -4,6 +4,7 @@ import HeroSection from "./pages/HeroSection";
 import HeroSectionMobile from "./pages/HeroSectionMobile";
 import Navbar from "./components/Navbar";
 import AboutSection from "./pages/AboutSection";
+import AcademicsSection from "./pages/AcademicsSection";
 
 
 const App = () => {
@@ -36,6 +37,7 @@ const App = () => {
           <HeroSection />
         )}
         <AboutSection />
+        <AcademicsSection />
       </main>
     </div>
   );
