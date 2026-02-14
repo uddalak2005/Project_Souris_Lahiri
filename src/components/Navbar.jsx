@@ -27,7 +27,7 @@ function NavScrollExample() {
                     color: #fff8f0;
                 }
                 
-                @media (min-width: 992px) {
+                @media (min-width: 1200px) {
                     .nav-link-custom:hover {
                         color: #4cc9f0 !important;
                         transform: translateY(-2px);
@@ -51,7 +51,7 @@ function NavScrollExample() {
                     }
                 }
 
-                @media (max-width: 991px) {
+                @media (max-width: 1199px) {
                     .nav-link-custom {
                         padding: 0.75rem 1rem !important;
                         margin: 0.25rem 0 !important;
@@ -73,7 +73,7 @@ function NavScrollExample() {
                     cursor: pointer;
                 }
 
-                @media (min-width: 992px) {
+                @media (min-width: 1200px) {
                     .connect-btn:hover {
                         transform: scale(1.05);
                         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -90,7 +90,7 @@ function NavScrollExample() {
                     z-index: 1000;
                 }
 
-                @media (max-width: 991px) {
+                @media (max-width: 1199px) {
                     .navbar-collapse {
                         position: absolute;
                         top: 100%;
@@ -112,7 +112,7 @@ function NavScrollExample() {
             `}</style>
 
 
-            <Navbar expand="lg"
+            <Navbar expand="xl"
                 variant="dark"
                 className="navbar-sticky p-3 border-b-2 border-black"
                 style={{

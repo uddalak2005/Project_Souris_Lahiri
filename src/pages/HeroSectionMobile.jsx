@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const HeroSectionMobile = () => {
     return (
-        <div className="relative top-0 w-full min-h-screen bg-black overflow-hidden -mt-20 pt-20">
+        <div className="relative top-0 w-full bg-black overflow-hidden -mt-20 pt-20">
 
             {/* 🔵 Background Beams */}
             <div className="absolute inset-0 z-0">
@@ -22,7 +22,7 @@ const HeroSectionMobile = () => {
             </div>
 
             {/* 🔵 Content Wrapper */}
-            <div className="relative z-10 flex flex-col min-h-screen">
+            <div className="relative z-10 flex flex-col ">
 
                 {/* 🔹 Top Image Section (Full Width) */}
                 <div className="w-full h-[50vh] overflow-hidden">
@@ -40,7 +40,7 @@ const HeroSectionMobile = () => {
                         Psychology Student & Voice Artist
                     </p>
 
-                    <p className="inter text-4xl leading-snug text-[#fff8f0]"
+                    <p className="inter text-4xl md:text-7xl leading-snug text-[#fff8f0]"
                         style={{ fontWeight: "100" }}>
                         Exploring the{" "}
                         <span className="!font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
