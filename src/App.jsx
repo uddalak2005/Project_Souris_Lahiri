@@ -1,8 +1,10 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import HeroSection from "./pages/HeroSection";
 import HeroSectionMobile from "./pages/HeroSectionMobile";
-import Navbar from "./components/Navbar"
-import { useState, useEffect } from "react";
+import Navbar from "./components/Navbar";
+import AboutSection from "./pages/AboutSection";
+
 
 const App = () => {
 
@@ -33,6 +35,7 @@ const App = () => {
         ) : (
           <HeroSection />
         )}
+        <AboutSection />
       </main>
     </div>
   );

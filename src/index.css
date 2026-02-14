@@ -24,7 +24,6 @@ html {
 .inter {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 100;
     font-style: normal;
 }
 
@@ -171,5 +170,11 @@ html {
 
     100% {
         transform: translateX(-50%);
+    }
+}
+
+@media (max-height: 719px) {
+    .hide-short-screen {
+        display: none;
     }
 }

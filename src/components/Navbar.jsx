@@ -29,7 +29,7 @@ function NavScrollExample() {
                 
                 @media (min-width: 992px) {
                     .nav-link-custom:hover {
-                        color: #ffb703 !important;
+                        color: #4cc9f0 !important;
                         transform: translateY(-2px);
                     }
                     
@@ -41,7 +41,7 @@ function NavScrollExample() {
                         transform: translateX(-50%) scaleX(0);
                         width: 80%;
                         height: 2px;
-                        background-color: #ffb703;
+                        background-color: #4cc9f0;
                         transition: transform 0.3s ease;
                     }
                     
@@ -59,12 +59,12 @@ function NavScrollExample() {
                     }
                     
                     .nav-link-custom.active {
-                        background-color: rgba(255, 183, 3, 0.1);
+                        background-color: rgba(76, 201, 240, 0.1);
                     }
                 }
 
                 .nav-link-custom.active {
-                    color: #ffb703 !important;
+                    color: #4cc9f0 !important;
                     font-weight: 600;
                 }
 
@@ -96,16 +96,24 @@ function NavScrollExample() {
                         top: 100%;
                         left: 0;
                         width: 100%;
-                        background: rgba(255, 255, 255, 0.25);
+                        background: rgba(0, 0, 0, 0.8);
                         backdrop-filter: blur(12px);
                         padding: 1rem;
                         border-radius: 0 0 16px 16px;
+                        border : 1
+                        border-color : white
                     }
-                    }
+                        .navbar-collapse.show {
+                            border: 1px solid rgba(255, 255, 255, 0.15);
+                            border-top: none; /* prevents double border with navbar */
+                            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+                        }
+                }
             `}</style>
 
 
             <Navbar expand="lg"
+                variant="dark"
                 className="navbar-sticky p-3 border-b-2 border-black"
                 style={{
                     background: "rgba(255, 255, 255, 0.25)",
@@ -115,7 +123,7 @@ function NavScrollExample() {
                     color: "#fff8f0",
                 }}>
                 <Container fluid>
-                    <div className="pr-12 anton text-3xl text-[#fff8f0] ">SOURIS.</div>
+                    <div className="pr-12 playfair-display text-3xl text-[#fff8f0] ">SOURIS.</div>
 
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
@@ -151,7 +159,7 @@ function NavScrollExample() {
                             href={`mailto:${email}`}
                             style={{ textDecoration: 'none' }}
                         >
-                            <div className="zalando-sans d-flex gap-2 justify-center items-center bg-black rounded-full p-2.5 px-3 text-white connect-btn">
+                            <div className="zalando-sans d-flex gap-2 justify-center items-center bg-blue-700 rounded-full p-2.5 px-3 text-white connect-btn">
                                 <p className="m-0 p-0">Lets Connect</p>
                                 <div className="material-symbols-outlined">
                                     north_east
