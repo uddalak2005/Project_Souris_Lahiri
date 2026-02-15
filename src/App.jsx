@@ -5,6 +5,10 @@ import HeroSectionMobile from "./pages/HeroSectionMobile";
 import Navbar from "./components/Navbar";
 import AboutSection from "./pages/AboutSection";
 import AcademicsSection from "./pages/AcademicsSection";
+import AchievementsSection from "./pages/AchievementsSection";
+import PublicationSection from "./pages/PublicationSection";
+import GallerySection from "./pages/GallerySection";
+import Footer from "./components/Footer";
 
 
 const App = () => {
@@ -24,6 +28,8 @@ const App = () => {
     return () => window.removeEventListener('resize', checkDeviceType);
   }, []);
 
+  console.log(isMobile, isTablet);
+
 
   return (
     <div>
@@ -38,7 +44,11 @@ const App = () => {
         )}
         <AboutSection />
         <AcademicsSection />
+        <AchievementsSection />
+        <PublicationSection />
+        <GallerySection />
       </main>
+      <Footer />
     </div>
   );
 };

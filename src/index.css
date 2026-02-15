@@ -195,3 +195,43 @@ html {
         display: none;
     }
 }
+
+.big-footer {
+    position: relative;
+    background: #ff4b4b;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    padding: 80px;
+    font-family: "Inter", sans-serif;
+}
+
+/* Container */
+.text-wrapper {
+    position: relative;
+}
+
+/* BACK LAYER (Shadow Text) */
+.text-back {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    font-size: 180px;
+    font-weight: 900;
+    color: #e33636;
+    /* darker red */
+    white-space: nowrap;
+    letter-spacing: 4px;
+}
+
+/* FRONT LAYER (Main Text) */
+.text-front {
+    position: relative;
+    font-size: 180px;
+    font-weight: 900;
+    color: #f5e3cf;
+    /* beige tone */
+    white-space: nowrap;
+    letter-spacing: 4px;
+}

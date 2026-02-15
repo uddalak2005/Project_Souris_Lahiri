@@ -20,10 +20,15 @@ const AboutSection = () => {
                 </p>
             </div> */}
 
-            <motion.div>
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="text-center mb-20"
+            >
                 <div className='m-auto w-4/5 flex justify-center items-center sm:gap-3 my-5 sm:m-5'>
                     <div>
-                        <img src={chessKing} alt="" className='h-10 w-20 md:h-20 md:w-20 invert m-0 p-0' />
+                        <img src={chessKing} alt="" className='h-10 w-20 md:h-25 md:w-30 invert m-0 p-0' />
                     </div>
                     <p className='text-center p-0 pt-10 text-3xl sm:text-5xl md:text-7xl text-gray-500'>
                         Bridging <span className='text-[#fff8f0]'>Evidence</span> and <span className='text-[#fff8f0]'>Empathy.</span>
@@ -92,27 +97,6 @@ const AboutSection = () => {
                 <div className="mt-3 w-[1px] h-10 bg-gradient-to-b from-gray-100 to-transparent animate-pulse" />
             </div>
 
-            {/* <ScrollStack className='-mt-30 sm:-mt-50'>
-                <ScrollStackItem>
-                    <div className='h-full w-full bg-blue-700 rounded-xl'>
-
-                    </div>
-                </ScrollStackItem>
-                <ScrollStackItem>
-                    <div className='h-full w-full bg-[#FEFE20] rounded-xl'>
-
-                    </div>
-                </ScrollStackItem>
-                <ScrollStackItem>
-                    <div className='h-full w-full bg-[#FF3F41] rounded-xl'>
-
-                    </div>
-                </ScrollStackItem>
-                {/* <ScrollStackItem>
-                    <div className='h-full w-full bg-[#FF3F41] rounded-xl'>
-
-                    </div>
-                </ScrollStackItem> */}
 
 
         </div>

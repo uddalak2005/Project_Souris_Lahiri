@@ -2,6 +2,7 @@ import React from "react";
 import Beams from "../components/Beams";
 import heroImg from "../assets/hero.jpeg";
 import { motion } from "framer-motion";
+import Shuffle from "../components/ShuffleText";
 
 const HeroSectionMobile = () => {
     return (
@@ -35,6 +36,21 @@ const HeroSectionMobile = () => {
 
                 {/* 🔹 Bottom Text Section */}
                 <div className="flex flex-col justify-center px-6 py-10 text-center items-center">
+                    <Shuffle
+                        text="Souris Lahiri"
+                        shuffleDirection="right"
+                        duration={0.35}
+                        animationMode="evenodd"
+                        shuffleTimes={1}
+                        ease="power3.out"
+                        stagger={0.03}
+                        threshold={0.1}
+                        triggerOnce={true}
+                        triggerOnHover
+                        respectReducedMotion={true}
+                        loop={false}
+                        loopDelay={0}
+                    />
 
                     <p className="text-xs uppercase tracking-[0.3em] text-[#fff8f0] ">
                         Psychology Student & Voice Artist

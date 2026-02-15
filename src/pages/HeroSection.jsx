@@ -2,6 +2,7 @@ import React from 'react'
 import Beams from '../components/Beams'
 import { motion } from "framer-motion";
 import heroImg from "../assets/hero.jpeg"
+import Shuffle from '../components/ShuffleText';
 
 const HeroSection = () => {
     return (
@@ -23,6 +24,21 @@ const HeroSection = () => {
 
                 <div className="absolute top-0 left-0 z-50 flex items-center justify-center h-full w-full">
                     <div className='w-3/5 p-5'>
+                        <Shuffle
+                            text="Souris Lahiri"
+                            shuffleDirection="right"
+                            duration={0.35}
+                            animationMode="evenodd"
+                            shuffleTimes={1}
+                            ease="power3.out"
+                            stagger={0.03}
+                            threshold={0.1}
+                            triggerOnce={true}
+                            triggerOnHover
+                            respectReducedMotion={true}
+                            loop={false}
+                            loopDelay={0}
+                        />
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -31,11 +47,12 @@ const HeroSection = () => {
                         >
                             Psychology Student & Voice Artist
                         </motion.p>
+
                         <motion.p
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
-                            className="inter text-4xl md:text-7xl mb-6 leading-tight !text-[#fff8f0]"
+                            className="inter text-4xl md:text-6xl mb-6 leading-tight !text-[#fff8f0]"
                             style={{ fontWeight: "100" }}
                         >
                             Exploring the <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">Mind</span>.

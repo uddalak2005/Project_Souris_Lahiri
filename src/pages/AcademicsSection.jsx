@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import chessQueen from "../assets/queen.png";
+import chessRook from "../assets/rook.png";
 
 const academicData = [
     {
@@ -120,7 +120,7 @@ const AcademicsSection = () => {
                 >
                     <div className='m-auto w-4/5 flex justify-center items-center sm:gap-3 my-5 sm:m-5'>
                         <div>
-                            <img src={chessQueen} alt="" className='h-10 w-20 md:h-20 md:w-20 invert m-0 p-0' />
+                            <img src={chessRook} alt="" className='h-10 w-20 md:h-20 md:w-25 invert m-0 p-0' />
                         </div>
                         <p className='text-center p-0 pt-10 text-3xl sm:text-5xl md:text-7xl text-gray-500'>
                             <span className='text-[#fff8f0]'>Academic</span> Journey and  <span className='text-[#fff8f0]'>Milestone</span>
