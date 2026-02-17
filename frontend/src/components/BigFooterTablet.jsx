@@ -6,7 +6,7 @@ const BigFooter = () => {
 
             {/* Normal Text */}
             <p className="font-bold text-[5rem] leading-none">
-                SOURIS LAHIRI
+                <span className="text-[#ffb703]">S</span>O<span className="text-[#ffb703]">UR</span>IS L<span className="text-[#ffb703]">AHI</span>RI
             </p>
 
             {/* Flipped Text */}
@@ -16,7 +16,7 @@ const BigFooter = () => {
         scale-y-[-1]
         leading-none
         !-mt-9
-        text-[#ffb703]
+        text-[#ffb703]/20
       ">
                 SOURIS LAHIRI
             </p>
