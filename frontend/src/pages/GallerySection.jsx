@@ -71,7 +71,7 @@ const GallerySection = () => {
 
                     </div>
                     <div className="flex justify-center items-center">
-                        <p className="text-gray-400 mt-6 max-w-2xl mx-5 text-lg mb-0">
+                        <p className="text-gray-400 mt-3 max-w-2xl mx-5 text-lg mb-0">
                             A glimpse into the moments that define my journey — from academic milestones and research presentations to hackathon wins and professional internships.
                         </p>
                     </div>
