@@ -42,7 +42,7 @@ const GallerySection = () => {
         <section
             className="
                 relative w-full py-24 overflow-hidden 
-                h-screen flex justify-center items-center flex-col bg-black
+                h-[1000px] flex justify-center items-center flex-col bg-black
             "
         >
 
@@ -71,7 +71,7 @@ const GallerySection = () => {
 
                     </div>
                     <div className="flex justify-center items-center">
-                        <p className="text-gray-400 mt-3 max-w-2xl mx-5 text-lg mb-0">
+                        <p className="text-gray-400 mt-0 max-w-2xl mx-5 text-lg mb-0">
                             A glimpse into the moments that define my journey — from academic milestones and research presentations to hackathon wins and professional internships.
                         </p>
                     </div>
@@ -86,7 +86,7 @@ const GallerySection = () => {
                     ) : galleryItems.length > 0 ? (
                         <GalleryCarousel images={galleryItems} />
                     ) : (
-                        <div className="flex flex-col justify-center items-center py-20">
+                        <div className="flex flex-col justify-center items-center py-10">
                             <span className="material-symbols-outlined text-white/20 text-6xl mb-4">
                                 photo_library
                             </span>
