@@ -73,7 +73,7 @@ const AboutSection = () => {
                         category="Branding & Identity"
                         title="Vocal Artistry"
                         image={images?.vocalArtistry ? urlFor(images.vocalArtistry).url() : Voice}
-                        description="Beyond my clinical career, I am an experienced vocal artist and narrator, collaborating with notable productions like Sunday Suspense and Goppo Mir er Thek. I hold a distinction in recitation from Rabindra Bharati University Alumni Association."
+                        description="Beyond my clinical career, I am an experienced vocal artist and narrator, collaborating with notable production houses. I hold a distinction in recitation from Rabindra Bharati University Alumni Association."
                     />
 
 
